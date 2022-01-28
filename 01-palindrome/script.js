@@ -14,16 +14,15 @@
  */
 
 function palindrome(str) {
-  if (typeof str === "string") {
-    const strLetters = str.replaceAll(/[^А-яЁёA-Za-z]/g, "");
-    let a = strLetters.toLowerCase().split("", strLetters.length);
-    if (a.join("") === a.reverse().join("")) {
-      return true;
-    } else {
-      return false;
-    }
-  } else {
+  if (typeof str !== "string") {
     return "Введите строку";
+  }
+  const strLetters = str.replaceAll(/[^А-яЁёA-Za-z]/g, "");
+  let a = strLetters.toLowerCase().split("", strLetters.length);
+  if (a.join("") === a.reverse().join("")) {
+    return true;
+  } else {
+    return false;
   }
 }
 
