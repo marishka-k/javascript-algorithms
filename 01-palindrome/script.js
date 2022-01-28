@@ -22,7 +22,9 @@ function palindrome(str) {
     } else {
       return false;
     }
-  } else return "Введите строку";
+  } else {
+    return "Введите строку";
+  }
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
