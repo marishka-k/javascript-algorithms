@@ -25,7 +25,6 @@ function primes(num) {
       newList.push(i);
     }
   }
-
   return newList;
 }
 
@@ -33,4 +32,3 @@ function primes(num) {
 
 console.log(primes(6)); // [2, 3, 5]
 console.log(primes(17)); // [2, 3, 5, 7, 11, 13, 17]
-

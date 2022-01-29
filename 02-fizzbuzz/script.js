@@ -12,9 +12,9 @@
 
 function fizzBuzz(num) {
   if (typeof num !== "number" || num < 1) {
-    console.log ("введите натуральное число от 1 и больше");
+    console.log("введите натуральное число от 1 и больше");
   }
-  for (let i = 1; i <= num; i ++) {
+  for (let i = 1; i <= num; i++) {
     if (i % 15 === 0) {
       console.log("fizzbuzz");
     } else if (i % 3 === 0) {
