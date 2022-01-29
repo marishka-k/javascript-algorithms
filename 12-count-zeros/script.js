@@ -17,11 +17,11 @@ function countZeros(n) {
   for (let i = 10; i <= n; i += 10) {
     ZerosQuantity++;
     if (i % 100 === 0) {
-        for (let x = i; x < i + 10 && x <= n; x++) {
-        ZerosQuantity++}
+      for (let x = i; x < i + 10 && x <= n; x++) {
+        ZerosQuantity++;
+      }
     }
   }
-
   return ZerosQuantity;
 }
 
