@@ -16,8 +16,8 @@ function sumOfTwo(arr, sum) {
     return "ведите целое неотрицательное число";
   }
   for (let i = 0; i <= arr.length; i++) {
-    for (let x = i + 1; x < arr.length; x++) {
-      const elementsSum = arr[i] + arr[x];
+    for (let j = i + 1; j < arr.length; j++) {
+      const elementsSum = arr[i] + arr[j];
       if (
         typeof elementsSum !== "number" ||
         elementsSum - Math.floor(elementsSum) !== 0 ||
