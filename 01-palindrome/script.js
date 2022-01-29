@@ -18,7 +18,7 @@ function palindrome(str) {
     return "Введите строку";
   }
   const strLetters = str.replaceAll(/[^А-яЁёA-Za-z]/g, "");
-  let a = strLetters.toLowerCase().split("", strLetters.length);
+  const a = strLetters.toLowerCase().split("", strLetters.length);
   if (a.join("") === a.reverse().join("")) {
     return true;
   } else {

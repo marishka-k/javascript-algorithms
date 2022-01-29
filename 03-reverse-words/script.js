@@ -10,7 +10,7 @@
 
 function reverseWords(str) {
   if (typeof str === "string") {
-    let a = str.split(" ").reverse().join(" ");
+    const a = str.split(" ").reverse().join(" ");
     return a;
   } else return "Введите строку";
 }

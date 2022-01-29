@@ -10,19 +10,19 @@ function countZeros(n) {
   if (typeof n !== "number" || n < 0) {
     return "ведите натуральное число больше 0";
   }
-  let ZerosQuantity = 0;
+  let zerosQuantity = 0;
   if (n < 10) {
-    return ZerosQuantity;
+    return zerosQuantity;
   }
   for (let i = 10; i <= n; i += 10) {
-    ZerosQuantity++;
+    zerosQuantity++;
     if (i % 100 === 0) {
       for (let j = i; j < i + 10 && j <= n; j++) {
-        ZerosQuantity++;
+        zerosQuantity++;
       }
     }
   }
-  return ZerosQuantity;
+  return zerosQuantity;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
