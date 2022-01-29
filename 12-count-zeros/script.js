@@ -4,10 +4,25 @@
  * Напишите функцию countZeros(n), принимающую на вход натуральное число n.
  * Возвращать функция должна суммарное количество нулей, содержащихся во всех числах от 1 до n включительно.
  *
-*/
+ */
 
 function countZeros(n) {
-    // Напишите код здесь
+  if (typeof n !== "number" || n < 0) {
+    return "ведите натуральное число больше 0";
+  }
+  let ZerosQuantity = 0;
+  if (n < 10) {
+    return ZerosQuantity;
+  }
+  for (let i = 10; i <= n; i += 10) {
+    ZerosQuantity++;
+    if (i % 100 === 0) {
+        for (let x = i; x < i + 10 && x <= n; x++) {
+        ZerosQuantity++}
+    }
+  }
+
+  return ZerosQuantity;
 }
 
 // Протестируйте решение, вызывая функцию с разными аргументами:
